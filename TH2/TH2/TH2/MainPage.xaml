@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TH2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Thực hành 2 - Bùi Thành Nhân - 19521925" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="Bài 1" Clicked="Button_Clicked_1"></Button>
+        <Button Text="Bài 2" Clicked="Button_Clicked_2"></Button>
+        <Button Text="Bài 3" Clicked="Button_Clicked_3"></Button>
+    </StackLayout>
+
+</ContentPage>
