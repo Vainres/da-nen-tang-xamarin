@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TH3.Bai1">
+    <ScrollView>
+        <ListView x:Name="dsQuocGia" ItemSelected="dsQuocGia_ItemSelected" RowHeight="100" IsGroupingEnabled="True" 
+                  GroupDisplayBinding="{Binding CountryName}" GroupShortNameBinding="{Binding Description}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding ImgSrc}" Text="{Binding CityName}" Height="150"></ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <TextCell  Text="{Binding CountryName}"  TextColor="Red" Detail="{Binding Description}"></TextCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+        </ListView>
+    </ScrollView>
+</ContentPage>

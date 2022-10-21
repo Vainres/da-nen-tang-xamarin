@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TH3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bùi Thành Nhân 19521925 BTTH3" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="Bài 1" x:Name="Bai1" Clicked="Bai1_Clicked"></Button>
+        <Button Text="Bài 2" x:Name="Bai2" Clicked="Bai2_Clicked"></Button>
+        <Button Text="Bài 3" x:Name="Bai3" Clicked="Bai3_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TH3.Bai2">
+    <ScrollView>
+        <StackLayout>
+            <Picker x:Name="BookPicker" Title="Pick a book" ItemDisplayBinding="{Binding TitleBook}" SelectedIndexChanged="BookPicker_SelectedIndexChanged"></Picker>
+
+            <ListView x:Name="Book" ItemSelected="Book_ItemSelected" RowHeight="100" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding ImgSrc}" Text="{Binding TitleBook}" Height="150"></ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
